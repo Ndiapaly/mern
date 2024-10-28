@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce de vente électronique</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- En-tête -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#">BackMarketClone</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Rechercher un produit..." />
+          <button>Recherche</button>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Nos produits</a></li>
+            <li><a href="#">Meilleures ventes</a></li>
+            <li><a href="#">Aide</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Bannière promotionnelle -->
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Après les contes de Noël, les comptes de Noël.</h1>
+        <p>
+          Trop de dépenses pendant les fêtes ? Revendez vos anciens appareils au
+          meilleur prix.
+        </p>
+        <a href="#" class="btn">Revendre</a>
+      </div>
+    </section>
+
+    <!-- Contenu principal avec une section latérale -->
+    <main class="main-container">
+      <!-- Section latérale -->
+      <aside class="sidebar">
+        <h2>Catégories</h2>
+        <ul>
+          <li>
+            <a href="#" class="category" data-category="all"
+              >Tous les produits</a
+            >
+          </li>
+          <li>
+            <a href="#" class="category" data-category="smartphones"
+              >Smartphones</a
+            >
+          </li>
+          <li>
+            <a href="#" class="category" data-category="laptops"
+              >Ordinateurs portables</a
+            >
+          </li>
+          <li>
+            <a href="#" class="category" data-category="tablets">Tablettes</a>
+          </li>
+          <li>
+            <a href="#" class="category" data-category="headphones"
+              >Écouteurs</a
+            >
+          </li>
+          <li>
+            <a href="#" class="category" data-category="consoles"
+              >Consoles de jeux</a
+            >
+          </li>
+          <li>
+            <a href="#" class="category" data-category="watches"
+              >Montres connectées</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Section des meilleures ventes -->
+      <section class="best-sellers">
+        <h2>Nos meilleures ventes</h2>
+
+        <!-- Produit 2 (Ordinateurs portables) -->
+
+        <div class="product-item" data-category="laptops">
+          <img
+            src="https://i.pinimg.com/736x/8d/6c/82/8d6c8212cec15ffa73cf40cfa6f65e63.jpg"
+            alt="MacBook Air 13"
+          />
+          <h3>MacBook Air 13"</h3>
+          <p>256 Go - Argent</p>
+          <p class="price">1000 €</p>
+        </div>
+        <div class="product-item" data-category="laptops">
+          <img
+            src="https://i.pinimg.com/474x/d1/95/b9/d195b94c71f5a97ea464e16af2b07022.jpg"
+            alt="MacBook Air 13"
+          />
+          <h3>MacBook Air 13"</h3>
+          <p>256 Go - Argent</p>
+          <p class="price">1000 €</p>
+        </div>
+        <div class="product-item" data-category="laptops">
+          <img
+            src="https://i.pinimg.com/474x/77/a3/c4/77a3c49a29f51bb36b5f40fd30c48228.jpg"
+            alt="MacBook Air 13"
+          />
+          <h3>MacBook Air 13"</h3>
+          <p>256 Go - Argent</p>
+          <p class="price">1000 €</p>
+        </div>
+        <div class="product-item" data-category="laptops">
+          <img
+            src="https://i.pinimg.com/474x/d6/46/14/d646147952636b44ac290ff5b14a5524.jpg"
+            alt="MacBook Air 13"
+          />
+          <h3>MacBook Air 13"</h3>
+          <p>256 Go - Argent</p>
+          <p class="price">1000 €</p>
+        </div>
+        <div class="product-item" data-category="laptops">
+          <img
+            src="https://i.pinimg.com/474x/30/88/d3/3088d3d597da816fe9862cd40cbaf1ce.jpg"
+            alt="MacBook Air 13"
+          />
+          <h3>MacBook Air 13"</h3>
+          <p>256 Go - Argent</p>
+          <p class="price">1000 €</p>
+        </div>
+        <div class="product-item" data-category="laptops">
+          <img
+            src="https://i.pinimg.com/474x/59/c2/e6/59c2e607f0659895d245477d3bb81d2b.jpg"
+          />
+          <h3>MacBook Air 13"</h3>
+          <p>256 Go - Argent</p>
+          <p class="price">1000 €</p>
+        </div>
+        <div class="product-item" data-category="laptops">
+          <img
+            src="https://i.pinimg.com/736x/8d/6c/82/8d6c8212cec15ffa73cf40cfa6f65e63.jpg"
+          />
+          <h3>MacBook Air 13"</h3>
+          <p>256 Go - Argent</p>
+          <p class="price">1000 €</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 BackMarketClone. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+
+      /* En-tête */
+      header {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+      }
+
+      .logo a {
+        font-size: 24px;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .search-bar {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      .search-bar input {
+        padding: 5px;
+      }
+
+      .search-bar button {
+        padding: 6px 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      nav ul li {
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      /* Bannière */
+      .banner {
+        background-color: #0a74da;
+        color: #fff;
+        text-align: center;
+        padding: 60px 0;
+      }
+
+      .banner h1 {
+        font-size: 36px;
+      }
+
+      .banner p {
+        margin: 20px 0;
+      }
+
+      .banner .btn {
+        background-color: #fff;
+        color: #0a74da;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
+
+      /* Mise en page du contenu principal */
+      .main-container {
+        display: flex;
+        padding: 40px 0;
+        gap: 20px;
+      }
+
+      /* Section latérale (sidebar) */
+      .sidebar {
+        width: 20%;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .sidebar h2 {
+        margin-bottom: 10px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+      }
+
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+
+      /* Lien de catégorie dans la sidebar */
+      .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 8px;
+        display: block;
+        transition: background-color 0.3s ease;
+      }
+
+      .sidebar ul li a:hover {
+        background-color: #0a74da;
+        color: #fff;
+      }
+
+      /* Masquer les produits avec display: none si nécessaire */
+      .product-item {
+        display: none; /* On cache initialement pour gérer via JS */
+      }
+
+      .product-item img {
+        width: 100%;
+        max-width: 150px; /* Ajustement de la taille des images */
+        height: auto;
+      }
+
+      /* Section Meilleures ventes */
+      .best-sellers {
+        width: 80%;
+        padding: 0 20px;
+      }
+
+      .best-sellers h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .product-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .product-item {
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .product-item img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+      }
+
+      .product-item h3 {
+        margin: 10px 0;
+      }
+
+      .product-item .price {
+        font-size: 18px;
+        color: #e63946;
+      }
+
+      /* Pied de page */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sélectionne tous les liens de catégories et les éléments de produit
+        const categoryLinks = document.querySelectorAll(".category");
+        const products = document.querySelectorAll(".product-item");
+
+        // Fonction pour filtrer les produits
+        function filterProducts(category) {
+          products.forEach((product) => {
+            // Vérifie si le produit appartient à la catégorie sélectionnée ou si "all" est sélectionné
+            if (
+              category === "all" ||
+              product.getAttribute("data-category") === category
+            ) {
+              product.style.display = "block"; // Affiche le produit
+            } else {
+              product.style.display = "none"; // Cache le produit
+            }
+          });
+        }
+
+        // Ajoute un écouteur d'événements à chaque lien de catégorie
+        categoryLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault(); // Empêche le comportement par défaut du lien
+            const category = this.getAttribute("data-category"); // Récupère la catégorie du lien cliqué
+            filterProducts(category); // Filtre les produits par la catégorie sélectionnée
+          });
+        });
+
+        // Afficher tous les produits au chargement de la page
+        filterProducts("all");
+      });
+    </script>
+  </body>
+</html>
